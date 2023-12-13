@@ -5,7 +5,8 @@ import morgan from 'morgan'
 import bodyParser from 'body-parser'
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
+// const dbConnection = require('./config/db.js')
 
 // Middleware
 app.use(express.json())
