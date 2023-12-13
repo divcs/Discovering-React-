@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+}
+.heading {
+  text-align: left;
+  margin: 0px 30px 0px 0px !important;
+}
+p {
+  line-height: 25px;
+}
+.skeletonBlock {
+  box-sizing: border-box;
+  text-align: left;
+}
+.skeletonBlock > * {
+  margin-bottom: 30px;
+  display: block !important;
+}
+
+.skeletonBlock > .paragraph {
+  margin-bottom: 10px;
+  display: block !important;
+}
+
+.contentBlock {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+  text-align: left;
+}
+
+.cardBlock {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  text-align: left;
+}
+
+.cardSkeleton > * {
+  margin-bottom: 20px;
+}
+
+.cardSkeletonImage,
+.cardImage {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  justify-items: baseline;
+  gap: 10px;
+}
+
+.cardImage > img {
+  background: #000;
+  border-radius: 50%;
+}
